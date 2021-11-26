@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+  }
+  
+
+
+
+.main-bg {
+    background: url("../img/photos/main-bg.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--light-color);
+}
+
+.btn {
+    border: 2px solid var(--assistant-color);
+    background-color: transparent;
+    padding: 15px;
+    width: 227px;
+    color: var(--assistant-color);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.btn--light {
+    border: 2px solid var(--light-color);
+    color: var(--light-color);
+}

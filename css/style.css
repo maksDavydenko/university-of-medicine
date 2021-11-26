@@ -1,5 +1,125 @@
-* {
-  margin: 0;
-  padding: 0; }
 
-/*# sourceMappingURL=style.css.map */
+
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.feedback-form {
+  padding: 47px 60px 26px;
+  max-width: 432px;
+  background-image: url('../img/photos/form-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback-header {
+  display: flex;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px 11px;
+  background: rgba(255, 255, 255, 0.7);
+  margin-bottom: 26px;
+  outline: none;
+  border: none; 
+  font-size: 18px;
+  color: #2F2424;
+}
+
+.form-input::placeholder {
+  font-size: 18px;
+  color: #2F2424;
+}
+
+.form-header {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.form-header__icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 9px;
+}
+
+.form-header__title {
+  color: var(--light-color);
+  font-size: 24px;
+}
+
+.form-btn {
+  display: block;
+  margin: auto;
+}
+
+.header-slider {
+  max-width: 906px;
+}
+.header-slider-item {
+  position: relative;
+}
+
+.header-slider__content {
+  position: absolute;
+  max-width: 500px;
+  top: 50%;
+  left: 80px;
+  transform: translate(0 ,-50%);
+  color: var(--main-color);
+}
+
+.slider-header {
+  font-size: 52px;
+  line-height: 61px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.slider-header span {
+  font-weight: bold;
+}
+
+.slider-header-list {
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+.slider-header-list li {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.header-slider-link {
+  color: var(--assistant-color);
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.slick-arrow {
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+  width: 38px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-color);
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
