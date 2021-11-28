@@ -150,6 +150,29 @@
   justify-content: space-between;
 }
 
+.about-block {
+  flex-basis: 45%;
+}
+
+.about-items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.about-item {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 300px;
+  font-size: 21px;
+  line-height: 25px;
+  color: var(--dark-color);
+}
+
+.about-item__icon {
+  margin-right: 14px;
+}
+
 .about-content-text {
   font-size: 21;
   line-height: 25px;
@@ -523,6 +546,28 @@ Height
 
 
 /* choose */
+
+.choose {
+  position: relative;
+}
+
+.choose::after {
+  top: 50%;
+  right: -35%;
+  transform: translate(0, -50%);
+  position: absolute;
+  content: url('../img/photos/rectangular.png');
+  
+}
+
+.choose::before {
+  top: 50%;
+  left: -35%;
+  transform: translate(0, -50%);
+  position: absolute;
+  content: url('../img/photos/rectangular.png');
+  
+}
 
 .choose-content {
   display: grid;
