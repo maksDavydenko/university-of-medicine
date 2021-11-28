@@ -143,6 +143,21 @@
 
 
 
+/* about */
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-content-text {
+  font-size: 21;
+  line-height: 25px;
+  text-align: justify;
+  color: var(--dark-color);
+  margin-bottom: 30px;
+}
+
 /* Style */
 
 .facultate-of-medicine__title {
@@ -402,6 +417,9 @@ Height
 
 .news-item__img {
   margin-right: 44px;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .news-item-title {
@@ -427,24 +445,51 @@ Height
 }
 
 
+.checked-news {
+  display: flex;
+}
+
+.checked-news-buttons {
+  margin-right: 42px;
+}
+
+.checked-news-btn {
+  width: 500px;
+  padding: 10px 42px;
+  font-size: 30px;
+  line-height: 37px;
+  background-color: var(--main-color);
+  color: var(--light-color);
+}
+
+.checked-news-btn--active {
+  background-color: var(--assistant-color);
+}
+
 .recent-news-calendar {
   color: var(--light-color);
+  margin-right: 42px;
 }
 
 .recent-news-date {
   padding: 25px;
   width: 100px;
+  font-size: 42px;
+  text-align: center;
   position: relative;
   background-color: var(--assistant-color);
 }
 
 .recent-news-date::after {
-  position: absolute;
-  padding: 25px;
-  right: -10px;
-  top: 10px;
   content: "";
-  border: 5px solid transparent; border-left: 5x solid var(--assistant-color);
+  right: -14px;
+  top: 15px;
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 15px solid var(--assistant-color);
+	border-bottom: 10px solid transparent;
 }
 
 .news-date {
@@ -461,8 +506,86 @@ Height
 .recent-news-university {
   padding: 25px;
   width: 100px;
+  font-size: 21px;
   background-color: var(--main-color);
 }
+
+.recent-news-item {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.news-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+
+/* choose */
+
+.choose-content {
+  display: grid;
+  grid-template-areas: "info content"
+                        "button content";
+}
+
+.choose-text {
+  grid-area: info;
+  max-width: 366px;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: justify;
+  color: var(--dark-color);
+}
+
+.choose-items {
+  grid-area: content;
+}
+
+.choose-btn {
+  margin-top: auto;
+  grid-area: button;
+}
+
+.choose-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose-item {
+  text-align: center;
+  flex-basis: 366px;
+}
+
+.choose-item-img {
+  position: relative;
+  margin-bottom: 37px;
+}
+
+.choose-item-img---main {
+
+}
+
+.choose-item-img--shadow {
+  bottom: 20px;
+  position: absolute;
+  left: 40%;
+}
+
+.choose-item__title {
+  color: var(--assistant-color);
+  font-size: 29px;
+  line-height: 34px;
+  margin-bottom: 18px;
+}
+
+.choose-item__text {
+  font-size: 21px;
+  line-height: 25px;
+  color: var( --dark-color);
+}
+
 
 /* gallery */
 
