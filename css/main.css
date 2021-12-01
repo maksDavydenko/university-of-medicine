@@ -17,10 +17,17 @@
 }
 
 .container {
-    width: 90%;
-    max-width: 1830px;
+    width: 95%;
+    max-width: 1920px;
     margin: 0 auto;
     position: relative;
+}
+
+.container-wrap {
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
 }
 
 
@@ -169,7 +176,7 @@
 }
 
 .header-external-links a {
-  padding: 20px 68px;
+  padding: 15px 68px;
   border: 1px solid var(--main-color);
   color: var(--dark-color);
   font-size: 30px;
@@ -211,6 +218,7 @@
   align-content: center;
   cursor: pointer;
   position: relative;
+  margin-right: 18px;
 }
 
 .search-icon {
@@ -218,6 +226,7 @@
 }
 
 .search-input {
+  display: none;
   position: absolute;
   right: -300%;
   top: 50%;
@@ -277,6 +286,7 @@
     background-color: transparent;
     padding: 15px;
     width: 227px;
+    line-height: 22px;
     color: var(--assistant-color);
     font-size: 22px;
     cursor: pointer;

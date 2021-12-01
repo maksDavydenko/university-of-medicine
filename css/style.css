@@ -1,12 +1,13 @@
 
 .section {
-  margin-bottom: 240px;
+  margin-bottom: 170px;
 }
 
 .feedback {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
+  gap: 1%;
 }
 
 .feedback-form {
@@ -29,7 +30,7 @@
   margin-bottom: 34px;
   outline: none;
   border: none; 
-  font-size: 18px;
+  font-size: 24px;
   color: #2F2424;
 }
 
@@ -62,19 +63,24 @@
 }
 
 .header-slider {
-  width: 66%;
+  max-width: 1200px
 }
 
 .header-slider-item {
   position: relative;
+  background-image: url('../img/photos/pic_slider.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 1200px;
 }
 
 .header-slider__content {
-  position: absolute;
+  /* position: absolute; */
   max-width: 58%;
-  top: 50%;
-  left: 80px;
-  transform: translate(0 ,-50%);
+  /* top: 50%;
+  left: 80px; */
+  /* transform: translate(0 ,-50%); */
   color: var(--main-color);
 }
 
@@ -158,13 +164,16 @@
 }
 
 .about-img {
-  margin-right: 5%;
+  margin-right: 1%;
   position: relative;
   z-index: 2;
 }
 
 .about-img img {
   position: relative;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
   z-index: 2;
 }
 
@@ -302,25 +311,6 @@ Height
 .medicine-item:nth-child(3n)   { order: 3; }
 
 
-@media screen and (max-width: 1212px) {
-  .medicine-item:nth-child(3n+1) { order: 1; }
-  .medicine-item:nth-child(3n+2) { order: 1; }
-  .medicine-item:nth-child(3n)   { order: 1; }
-
-  .medicine-item {
-      flex-basis: 33%;
-  }
-  
-}
-
-@media screen and (max-width: 912px) {
-
-
-  .medicine-item {
-      flex-basis: 50%;
-  }
-  
-}
 
 
 /* admission__content */
@@ -505,6 +495,9 @@ Height
 
 .checked-news-buttons {
   margin-right: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .checked-news-btn {
@@ -701,7 +694,7 @@ Height
 .gallery-slider{
   grid-area: slider;
   max-width: 961px;
-  height: 390px;
+  max-height: 390px;
   margin-left: auto;
 }
 
@@ -779,6 +772,12 @@ Height
 .organizations {
   display: flex;
   justify-content: space-between;
+}
+
+.organizations img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .feedback-comments-slider .slick-list {
