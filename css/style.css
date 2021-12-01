@@ -568,6 +568,13 @@ Height
   gap: 42px;
 }
 
+.news-container-left {
+  width: 66%;
+}
+
+.news-container-right {
+  width: 33%;
+}
 
 /* choose */
 

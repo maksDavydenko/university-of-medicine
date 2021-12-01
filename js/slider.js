@@ -35,8 +35,15 @@ $(document).ready(function () {
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-
-            }
+                centerMode: true,
+                centerPadding: '20px',
+            },
+            // breakpoint: 540,
+            // settings: {
+            //     slidesToShow: 1,
+            //     slidesToScroll: 1,
+            //     centerPadding: '20px',
+            // }
         }]
     });
 });
