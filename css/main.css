@@ -299,7 +299,7 @@
 }
 
 .send-btn {
-  width: 20%;
+  width: 255px;
   background-color: var(--main-color);
   color: var(--light-color);
   cursor: pointer;

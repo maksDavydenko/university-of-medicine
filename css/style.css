@@ -68,19 +68,15 @@
 
 .header-slider-item {
   position: relative;
-  background-image: url('../img/photos/pic_slider.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-  width: 1200px;
+ 
 }
 
 .header-slider__content {
-  /* position: absolute; */
+  position: absolute;
   max-width: 58%;
-  /* top: 50%;
-  left: 80px; */
-  /* transform: translate(0 ,-50%); */
+  top: 50%;
+  left: 80px;
+  transform: translate(0 ,-50%);
   color: var(--main-color);
 }
 
@@ -169,6 +165,11 @@
   z-index: 2;
 }
 
+.about-img-mobile {
+  display: none;
+  float: right;
+}
+
 .about-img img {
   position: relative;
   max-width: 100%;
@@ -179,10 +180,13 @@
 
 .about-img::after {
   position: absolute;
-  content: url('../img/photos/rectangular.png');
+  background-image: url('../img/photos/rectangular.png');
+  content: "";
   right: -15%;
   z-index: -1;
   top: -10%;
+  width: 807px; 
+  height: 807px;
 }
 
 .about-items {
@@ -325,10 +329,11 @@ Height
 }
 
 .admission-header {
-  padding: 30px;
+  padding: 65px;
   text-align: center;
   color: var(--assistant-color);
-  width: 60%;
+  width: 70%;
+  max-width: 1190px;
   margin-left: auto;
   border-top: 9px solid var(--main-color--light);
   border-left: 9px solid var(--main-color--light);
@@ -336,9 +341,8 @@ Height
 }
 
 .admission__content {
-  width: 67%;
+  width: 70%;
   margin-left: auto;
-
 }
 
 .admission__block {
@@ -348,21 +352,29 @@ Height
 .admission-photo {
   position: absolute;
   bottom: -55px;
-  left: 0;
+  left: -7%;
+  width: 582.67px;
+  height: 812px;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.admission-steps-wrap {
+  margin-left: auto;
 }
 
 .admission-steps {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 4%;
+  justify-content: space-between;
   margin-bottom: 55px;
 }
 
 .admission-step {
   text-align: center;
   color: var(--light-color);
-  flex-basis: 330px;
+  flex-basis: 30%;
 }
 
 .admission-step__title {
@@ -407,12 +419,13 @@ Height
 
 .admissin-form input {
   margin: 0;
-  width: 340px;
+  flex-basis: 30%;
 }
 
 .admissin-form-btn {
   display: block;
   margin: 0 auto;
+  width: 30%;
 }
  
 
@@ -498,10 +511,11 @@ Height
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .checked-news-btn {
-  width: 500px;
+  max-width: 500px;
   padding: 10px 42px;
   font-size: 30px;
   line-height: 37px;
@@ -627,11 +641,13 @@ Height
 .choose-items {
   display: flex;
   justify-content: space-between;
+  max-width: 1170px;
+  margin-left: auto;
 }
 
 .choose-item {
   text-align: center;
-  flex-basis: 366px;
+  flex-basis: 30%;
 }
 
 .choose-item-img {

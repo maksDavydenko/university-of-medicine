@@ -36,6 +36,39 @@
         margin-right: 38px;
     }
 
+    
+    .admission-header{
+        padding: 50px 0;
+        font-size: 52px;
+    }
+
+    .admission-photo {
+        width: 437px;
+        height: 609px;
+        left: -3%;
+    }
+
+
+    .admission-step {
+        text-align: center;
+        color: var(--light-color);
+        flex-basis: 30%;
+      }
+      
+      .admission-step__title {
+        font-size: 44px;
+      }
+      
+      .admission-step__text {
+        font-size: 16.6778px;
+        line-height: 20px
+      }
+
+      .admissin-form-header {
+          font-size: 24px;
+      }
+      
+
     .gallery-content {
         grid-gap: 5%;
     }
@@ -57,6 +90,9 @@
           font-size: 22px;
       }
 
+      .send-btn {
+          font-size: 22px;
+      }
 }
 
 
@@ -75,8 +111,116 @@
         width: 50px;
         margin-right: 25px;
     }
-}
 
+    .admission-photo {
+        left: -6%;
+    }
+
+    .news-container {
+        flex-direction: column;
+    }
+
+    .news-container-left,
+    .news-container-right {
+        width: 100%;
+    }
+
+    .recent-news-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .recent-news-item {
+      max-width: 350px;
+    }
+ 
+}
+@media screen and (max-width: 1584px) {
+
+    .about-img::after {
+        width: 608px;
+        height: 608px;
+        background-size: cover;
+      }
+
+    .news-content-title {
+        font-size: 52px;
+    }
+
+    .about-content-text {
+        font-size: 16px;
+    }
+
+
+    .about-img {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    
+    .about-img img {
+        max-width: 559px;
+        max-height: 497px;
+      }
+   
+
+      .news-item__img {
+        max-width: 377px;
+      }
+
+      .checked-news-buttons {
+        max-width: 377px;
+      }
+
+      .checked-news-btn {
+            width: 377px;
+            font-size: 22px;
+      }
+
+      .recent-news-date {
+          font-size: 32px;
+      }
+
+      .news-item-title {
+          font-size: 22px;
+      }
+
+      .news-item-text {
+        font-size: 16px;
+      }
+
+      .recent-news-date {
+          padding: 15px;
+          font-size: 27px;
+      }
+
+      .recent-news-university {
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+      }
+
+
+      .footer-content {
+          gap: 20px 35px;
+      }
+
+      .footer-item {
+          flex-basis: 228px;
+      }
+
+      .footer-item__title {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      
+      .footer-item__text {
+        font-size: 16px;
+        line-height: 16px;
+      }
+}
 
 @media screen and (max-width: 1212px) {
     .medicine-item:nth-child(3n+1) { order: 1; }
@@ -87,6 +231,70 @@
         flex-basis: 33%;
     }
 
+    .choose-content {
+        grid-template-areas: "info"
+                                "content"
+                              "button";
+                              grid-gap: 50px;
+      }
+
+      .choose-text {
+          max-width: 100%;
+      }
+
+      .choose-items {
+          flex-wrap: wrap;
+          gap: 20px;
+      }
+
+
+      .choose-item__text {
+          font-size: 16px;
+      }
+
+      .choose-btn {
+          margin: auto;
+      }
+    .about-block {
+        flex-basis: 100%;
+    }
+
+    .about-img {
+       display: none;
+      }
+      
+      .about-img-mobile {
+        display: block;
+        margin-left: 20px;
+        margin-bottom: 40px;
+      }
+
+      .about-img-mobile img {
+        max-width: 60%;
+      }
+
+    .admission-header {
+        width: 100%;
+    }
+
+    .admission-photo {
+       display: none;
+      }
+      
+      .admission-steps-wrap {
+        margin-left: auto;
+      }
+
+      .admission-step {
+      
+        flex-basis: 30%;
+      }
+      
+      .admission__content {
+        width: 100%;
+      }
+       
+
     .gallery-content {
         grid-template-areas: "info"
                             "slider"
@@ -94,10 +302,28 @@
       }
 
       .gallery-slider{
-        /* max-width: 1054px;
-            width: 100%; */
+       
             height: auto;
       }
+
+      .send-feedback-content {
+          flex-direction: column;
+          gap: 20px
+      }
+
+      .send-feedback-content textarea {
+          height: 160px;
+      }
+
+      .send-feedback-content textarea,
+.send-feedback-content input {
+ 
+  width: 100%;
+}
+.send-btn {
+    margin: auto;
+    padding: 9px;
+}
     
   }
   
@@ -121,10 +347,101 @@
         background-color: var(--main-color);
     }
 
+    .admission-header {
+        font-size: 32px;
+        padding: 30px 0;
+    }
+
+    .admission-steps {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .admissin-form__content {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .admissin-form-btn {
+        width: 70%;
+      }
+
+      .choose-items {
+          margin-left: 0;
+      }
+
+      .choose-item {
+        flex-basis: 250px;
+        margin: auto;
+      }
+
+      .choose-item-img---main {
+        width: 100px;
+        height: 100px;
+      }
+
+      .choose-item-img--shadow {
+        width: 130px;
+        height: 130px;
+      }
 }
 
 
+@media screen and (max-width: 780px) {
+    .news-item {
+        flex-direction: column;
+    }
+
+    .news-item__img {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .checked-news {
+        flex-direction: column;
+    }
+
+    .checked-news-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .checked-news-btn {
+        width: 45%;
+        font-size: 13px;
+        padding: 5px;
+     
+    }
+
+   
+}
+
+@media screen and (max-width: 640px) {
+
+    .choose-items {
+      flex-direction: column;
+    }
+
+    .choose-item {
+        max-width: 250px;
+        margin: auto;
+      }
+    .choose-item__text {
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 540px) {
+
+    .news-content-subtitle span{
+        font-size: 13px;
+      }
+
+    .news-content-title {
+        font-size: 24px;
+    }
 
     .medicine-item {
         flex-basis: 100%;
@@ -144,15 +461,28 @@
          background-color: var(--main-color--light);
       }
 
-      /* .feedback-comment {
-          padding: 0px;
-      } */
+
+      .admission-header {
+        font-size: 24px;
+        padding: 25px 0;
+    }
 
       .feedback-comment__text {
         font-size: 13px;
         line-height: 16px;
         margin-bottom: 10px;
     }
+
+
+    .choose-item-img---main {
+        width: 80px;
+        height: 80px;
+      }
+
+      .choose-item-img--shadow {
+        width: 105px;
+        height: 105px;
+      }
 
     .blockquote {
         width: 29px;
@@ -192,45 +522,7 @@
 }
   
 
-@media screen and (max-width: 1584px) {
-    .news-content-title {
-        font-size: 52px;
-    }
 
-    .about-content-text {
-        font-size: 16px;
-    }
-
-
-    .about-img img {
-        max-width: 559px;
-        max-height: 497px;
-      }
-   
-
-      .about-img::after {
-        width: 60%;
-        height: 60%;
-      } 
-
-      .footer-content {
-          gap: 20px 35px;
-      }
-
-      .footer-item {
-          flex-basis: 228px;
-      }
-
-      .footer-item__title {
-        font-size: 22px;
-        margin-bottom: 20px;
-      }
-      
-      .footer-item__text {
-        font-size: 16px;
-        line-height: 16px;
-      }
-}
 
 
 
