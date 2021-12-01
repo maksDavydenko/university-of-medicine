@@ -111,7 +111,7 @@
 
 .header-slider__bg {
   max-width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   display: block;
 }
 
@@ -714,11 +714,10 @@ Height
   grid-area: button;
 }
 
-.gallery-slider{
+.gallery-slider-wrap{
   grid-area: slider;
   max-width: 961px;
   max-height: 390px;
-  margin-left: auto;
 }
 
 
@@ -743,6 +742,12 @@ Height
 
 .gallery-slider .slick-dots .slick-active {
   background-color: var(--assistant-color);
+}
+
+.gallery-slider img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* send-feedback */
