@@ -17,6 +17,13 @@
   .feedback-form {
       padding: 47px 60px;
   }
+
+  .choose::after, 
+    .choose::before {
+      background-size: 423px 430px;
+      width: 423px;
+    height: 430px;
+    }
 }
 
 @media screen and (max-width: 1778px) {
@@ -127,6 +134,7 @@
     }
 
     
+    
     .about-img img {
         max-width: 559px;
         max-height: 497px;
@@ -196,6 +204,28 @@
     display: block; 
     height: 450px;
   } 
+  .about-item {
+    flex-basis: 45%;
+  }
+  .about-item__icon {
+    width: 76px;
+    height: 76px;
+  }
+
+  .about-item__text {
+    font-size: 16px;
+  }
+
+  .about-content-text {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 25px;
+  }
+
+  .medicine-item__link {
+    font-size: 16px;
+  }
+  
  }
 
 
@@ -255,6 +285,10 @@
     .recent-news-item {
       max-width: 100%;
     }
+
+    .medicine-item__text {
+      margin-bottom: 5px;
+    }
  
 }
 @media screen and (max-width: 1212px) {
@@ -281,6 +315,7 @@
     }
 
     .choose-content {
+     
         grid-template-areas: "info"
                                 "content"
                               "button";
@@ -292,10 +327,15 @@
       }
 
       .choose-items {
+        margin-top: 50px;
           flex-wrap: wrap;
-          gap: 20px;
+          gap: 65px 20px;
       }
 
+      .choose::before, 
+      .choose::after {
+        content: "";
+      }
 
       .choose-item__text {
           font-size: 16px;
@@ -423,23 +463,25 @@
       height: 450px;
     }
 
-
+    .medicine-item__content {
+      width: 100%;
+    }
   
     .medicine-item-wrap {
         flex-basis: 50%;
     }
 
-    .medicine-item:nth-child(odd) {
+    .medicine-item-wrap:nth-child(odd) .medicine-item {
        background-color: var(--main-color--light);
     }
 
     
-    .medicine-item:nth-child(even) {
+    .medicine-item-wrap:nth-child(even) .medicine-item {
         background-color: var(--main-color--light);
      }
  
-    .medicine-item:nth-child(4n),
-    .medicine-item:nth-child(4n + 1) {
+     .medicine-item-wrap:nth-child(4n) .medicine-item,
+     .medicine-item-wrap:nth-child(4n + 1) .medicine-item {
         background-color: var(--main-color);
     }
 
@@ -556,6 +598,31 @@
     .choose-item__text {
         font-size: 13px;
     }
+    .medicine-item-wrap {
+      flex-basis: 100%;
+      
+  }
+    
+
+   
+    
+
+    .medicine-photo {
+      width: 60%;
+    }
+    .medicine-item-wrap:nth-child(4n) .medicine-item,
+    .medine-item-wrap:nth-child(4n + 1) .medicine-item {
+        background-color: var(--main-color);
+    }
+    
+    .medicine-item-wrap:nth-child(odd) .medicine-item {
+        background-color: var(--main-color);
+     }
+ 
+     
+     .medicine-item-wrap:nth-child(even) .medicine-item {
+         background-color: var(--main-color--light);
+      }
 }
 
 @media screen and (max-width: 540px) {
@@ -585,23 +652,10 @@
         font-size: 24px;
     }
 
-    .medicine-item-wrap {
-        flex-basis: 100%;
-    }
+   
 
-    .medicine-item-wrap:nth-child(4n),
-    .medicine-item-wrap:nth-child(4n + 1) {
-        background-color: var(--main-color);
-    }
-    
-    .medicine-item-wrap:nth-child(odd) {
-        background-color: var(--main-color);
-     }
- 
-     
-     .medicine-item-wrap:nth-child(even) {
-         background-color: var(--main-color--light);
-      }
+  
+
 
 
       .admission-header {
@@ -665,6 +719,15 @@
 
 @media screen and (max-width: 430px) {
 
+   .medicine-item__icon {
+      width: 35px;
+      height: 40px;
+      margin-right: 15px;
+    }
+
+    .medicine-item__text {
+      font-size: 16px;
+    }
   .header-slider__bg {
     object-fit: 75%;
   }
@@ -676,6 +739,17 @@
   .slider-header-list li{
     font-size: 10px;
     line-height: 15px;
+  }
+
+  .choose-content {
+    grid-gap: 0;
+  }
+
+  .btn {
+    width: 154px;
+    padding: 6px;
+    font-size: 13px;
+    line-height: 22px;
   }
 }
 

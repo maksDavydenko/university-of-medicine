@@ -204,6 +204,12 @@
   margin-right: 14px;
 }
 
+.about-item__text {
+  font-size: 21px;
+  line-height: 25px;
+  color: var(--dark-color);
+}
+
 .about-content-text-block {
   margin-bottom: 70px;
 }
@@ -253,7 +259,7 @@
 }
 
 .medicine-item__photo {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   bottom: 0;
@@ -323,17 +329,23 @@
   position: absolute;
 }
 
-.medicine-item:nth-child(odd) {
+.medicine-item-wrap {
+  position: relative;
+  z-index: 3;
+}
+
+
+ .medicine-item-wrap:nth-child(odd) .medicine-item {
   background-color: var(--main-color);
- } 
 
- .medicine-item:nth-child(even){
+ }
+ .medicine-item-wrap:nth-child(even) .medicine-item {
   background-color: var(--main-color--light);
- } 
+ }
 
- .medicine-item:nth-child(3n+1) { order: 1; }
-.medicine-item:nth-child(3n+2) { order: 2; }
-.medicine-itemp:nth-child(3n)   { order: 3; }
+ .medicine-item-wra:nth-child(3n+1) { order: 1; }
+.medicine-item-wrap:nth-child(3n+2) { order: 2; }
+.medicine-item-wrap:nth-child(3n)   { order: 3; }
 
 
 /* admission__content */
@@ -622,6 +634,9 @@
   transform: translate(0, -50%);
   position: absolute;
   content: url('../img/photos/rectangular.png');
+  background-size: 800px 800px;
+  width: 800px;
+  height: 800px;
   
 }
 
@@ -631,7 +646,9 @@
   transform: translate(0, -50%);
   position: absolute;
   content: url('../img/photos/rectangular.png');
-  
+  background-size: 800px 800px;
+  width: 800px;
+  height: 800px;
 }
 
 .choose-content {

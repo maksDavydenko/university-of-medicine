@@ -45,6 +45,10 @@
 
 
    @media screen and (max-width: 1670px)  {
+
+    .container-wrap {
+      width: 85%;
+    }
   
    .header-slider__bg {
     max-width: 100%;
@@ -78,12 +82,13 @@
     .container {
       width: 100%;
       max-width: 100%;
+      padding: 0px 10px;
     }
     
    .content {
       max-width: 100%;
       width: 100%;
-      padding: 0px 10px;
+     
    }
 
     .title-block {
