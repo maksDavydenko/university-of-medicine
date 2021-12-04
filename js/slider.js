@@ -25,7 +25,6 @@ $(document).ready(function () {
         prevArrow: "<button type='button' class='slick-prev slick-arrow slick-arrow--dark'><img src='./img/icons/arrow_prev--light.svg' alt='prev'></button>",
         nextArrow: "<button type='button' class='slick-next slick-arrow slick-arrow--dark'><img src='./img/icons/arrow_next--light.svg' alt='next'></i></button>",
 
-
         responsive: [{
             breakpoint: 1100,
             settings: {
@@ -34,12 +33,6 @@ $(document).ready(function () {
                 centerMode: true,
                 centerPadding: '20px',
             },
-            // breakpoint: 540,
-            // settings: {
-            //     slidesToShow: 1,
-            //     slidesToScroll: 1,
-            //     centerPadding: '20px',
-            // }
         }]
     });
 });

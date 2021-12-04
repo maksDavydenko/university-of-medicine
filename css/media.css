@@ -20,9 +20,16 @@
 
   .choose::after, 
     .choose::before {
-      background-size: 423px 430px;
-      width: 423px;
-    height: 430px;
+     content: url('../img/photos/Rectangle-small.png');
+    }
+
+    .choose::after {
+      right: 0;
+      transform: translate(0, -50%) rotate(180deg);
+    }
+
+    .choose::before {
+     left: 0;
     }
 }
 
@@ -74,6 +81,10 @@
           font-size: 24px;
       }
 
+      .gallery-slider-wrap {
+        max-width: 840px;
+      }
+   
  
     /* .gallery-info h2 {
         font-size: 52px;
@@ -118,7 +129,6 @@
         line-height: 61px;
       }
     
-
     .news-content-title {
         font-size: 52px;
     }
@@ -127,19 +137,15 @@
         font-size: 16px;
     }
 
-
     .about-img {
         margin-right: 0;
         margin-left: auto;
     }
 
-    
-    
     .about-img img {
         max-width: 559px;
         max-height: 497px;
       }
-   
 
       .news-item__img {
         max-width: 377px;
@@ -158,6 +164,10 @@
           font-size: 32px;
       }
 
+      .recent-news-calendar {
+        margin-right: 30px;
+      }
+
       .news-item-title {
           font-size: 22px;
       }
@@ -167,8 +177,8 @@
       }
 
       .recent-news-date {
-          padding: 15px;
-          font-size: 27px;
+          padding: 20px;
+          font-size: 32px;
       }
 
       .recent-news-university {
@@ -177,6 +187,9 @@
         text-align: center;
       }
 
+      .gallery-slider-wrap {
+        max-width: 687px;
+      }
 
       .footer-content {
           gap: 20px 35px;
@@ -204,6 +217,9 @@
     display: block; 
     height: 450px;
   } 
+
+ 
+  
   .about-item {
     flex-basis: 45%;
   }
@@ -225,6 +241,8 @@
   .medicine-item__link {
     font-size: 16px;
   }
+
+  
   
  }
 
@@ -237,17 +255,42 @@
       }
     
       .gallery-slider{
-        height: 326px;
+        height: auto;
+        margin-bottom: 60px;
+      }
+      .gallery-slider .slick-dots {
+        margin-top: 26px;
       }
 
       .gallery-content-item {
           max-width: 376px;
       }
+
+      .choose-item-img---main {
+        width: 101px;
+        height: 101px;
+      }
+
+      .choose-item-img--shadow {
+        width: 130px;
+        height: 129px;
+      }
+  
+      .choose-item__text,
+      .choose-text {
+        font-size: 16px;
+      }
 }
 
 @media screen and (max-width: 1330px) {
 
-  
+  .choose::after {
+    right: -47px;
+  }
+
+  .choose::before {
+   left: -47px;
+  }
     .medicine-item {
         padding: 20px 25px;
     }
@@ -283,14 +326,18 @@
     }
 
     .recent-news-item {
-      max-width: 100%;
+      max-width: 330px;
     }
 
     .medicine-item__text {
       margin-bottom: 5px;
     }
- 
+
+    .gallery-slider-wrap {
+      max-width: 630px;
+    }
 }
+
 @media screen and (max-width: 1212px) {
     .medicine-item-wrap:nth-child(3n+1) { order: 1; }
     .medicine-item-wrap:nth-child(3n+2) { order: 1; }
@@ -384,7 +431,10 @@
       .admission__content {
         width: 100%;
       }
-       
+      
+      .gallery {
+        padding: 50px 0;
+      }
 
       .gallery-content-item,
       .gallery-info {
@@ -402,13 +452,17 @@
           max-width: 100%;
       }
 
+      .gallery-slider .slick-dots {
+        margin-top: 40px;
+      }
+
       .gallery-btn {
           display: none;
       }
 
       .gallery-btn-mobile {
         display: block;
-        margin: 150px auto 0; 
+        margin: auto; 
       }
 
       .send-feedback-content {
@@ -513,17 +567,15 @@
         margin: auto;
       }
 
-      .choose-item-img---main {
-        width: 100px;
-        height: 100px;
-      }
+     
 
-      .choose-item-img--shadow {
-        width: 130px;
-        height: 130px;
-      }
 }
 
+@media screen and (max-width: 850px) {
+  .recent-news-item {
+    max-width: 100%;
+  }
+}
 
 @media screen and (max-width: 780px) {
     .news-item {
@@ -549,8 +601,8 @@
     .checked-news-btn {
         width: 45%;
         font-size: 13px;
-        padding: 5px;
-     
+        line-height: 15px;
+        padding: 10px 20px;
     }
 
    
@@ -710,6 +762,8 @@
         line-height: 15px;
     }
 
+   
+
     .feedback-comments-slider .slick-dots {
         margin-top: 26px;
     }
@@ -751,6 +805,56 @@
     font-size: 13px;
     line-height: 22px;
   }
+
+  .news-item-title {
+    font-size: 16px;
+  }
+  .recent-news-date {
+    padding: 20px 15px;
+    width: 60px;
+    font-size: 27px;
+    line-height: 27px;
+  }
+
+  .date-months {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .news-item-text,
+  .news-item-link {
+    font-size: 13px;
+  }
+
+  .news-content-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .news-content-title {
+    margin-bottom: 25px;
+  }
+
+  .news-container-item {
+    margin-bottom: 20px;
+  }
+
+  .news-item__img,
+  .news-item-title {
+    margin-bottom: 14px;
+  }
+
+ .checked-news-btn {
+    padding: 6px 8px;
+    font-size: 13px;
+    width: 162px;
+ }
+
+ .recent-news-item {
+   margin-bottom: 0;
+ }
+
+ .recent-news-items {
+   gap: 20px;
+ }
 }
 
 
