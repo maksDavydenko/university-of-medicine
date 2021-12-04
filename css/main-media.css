@@ -4,7 +4,73 @@
     text-align: center;
   }
    */
+   @media screen and (max-width: 1875px) {
+    .logo {
+      max-width: 432px;
+      max-height: 135px;
+    }
 
+    .header-text {
+      display: block;
+      font-size: 28px;
+    }
+
+    .header-contact__item,
+    .lang-text {
+      font-size: 14px;
+    }
+
+    .header-contact {
+      margin-right: 20px;
+    }
+
+    .header-contact__item {
+      white-space: nowrap
+    }
+
+    .header-contact__icon {
+      padding: 0 2px;
+    }
+    
+    .header-contact__icon img {
+      width: 11px;
+      height: 11px;
+    }
+
+    .header-external-links a {
+      padding: 14px 47px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    .social {
+      width: 36px;
+      height: 36px;
+      margin-right: 17px;
+      gap: 3px;
+    }
+
+    .social img {
+      width: 16px;
+      height: 16px;
+    }
+
+    .search-btn {
+      width: 53px;
+      height: 53px;
+    }
+
+    .search-icon {
+      width: 21px;
+      height: 21px;
+    }
+
+ 
+   }
+
+ 
+
+  
    
 
    @media screen and (max-width: 1778px)  {

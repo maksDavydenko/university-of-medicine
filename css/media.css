@@ -706,9 +706,33 @@
 
    
 
-  
+    .gallery {
+      padding: 30px 0;
+    }
 
 
+    .gallery-info h2 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .gallery-info p {
+      font-size: 13px;
+      line-height: 15px
+    }
+    
+    .gallery-slider-wrap{
+      height: 202px;
+    }
+    .gallery-btn-mobile{
+      margin-top: 70px;
+    }
+    .gallery-btn-mobile button{
+      padding: 6px;
+      font-size: 13px;
+      line-height: 16px;
+      width: 150px;
+    }
 
       .admission-header {
         font-size: 24px;
