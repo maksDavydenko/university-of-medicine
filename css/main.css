@@ -129,6 +129,10 @@
   display: flex;
 }
 
+.header-slider__content {
+  max-width: 45%;
+}
+
 .header-contact {
   display: flex;
   margin-right: 26px;

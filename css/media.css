@@ -1,22 +1,22 @@
 @media screen and (max-width: 1875px) {
 
-    .header-slider {
-        width: 66%;
+  .header-slider {
+      width: 66%;
+  }
+
+  .slider-header {
+      font-size: 52px;
     }
 
-    .slider-header {
-        font-size: 52px;
-      }
+    .slider-header-list li {
+      font-size: 22px;
+      line-height: 22px;
+    } 
 
-      .slider-header-list li {
-        font-size: 22px;
-        line-height: 22px;
-      } 
-
-      
-    .feedback-form {
-        padding: 47px 60px;
-    }
+    
+  .feedback-form {
+      padding: 47px 60px;
+  }
 }
 
 @media screen and (max-width: 1778px) {
@@ -36,7 +36,6 @@
         margin-right: 38px;
     }
 
-    
     .admission-header{
         padding: 50px 0;
         font-size: 52px;
@@ -67,13 +66,9 @@
       .admissin-form-header {
           font-size: 24px;
       }
-      
 
-    .gallery-content {
-        grid-gap: 5%;
-    }
-
-    .gallery-info h2 {
+ 
+    /* .gallery-info h2 {
         font-size: 52px;
       }
 
@@ -84,80 +79,14 @@
       .gallery-slider {
         max-width: 687px;
         height: 292.28px;
-      }
+      } */
 
-      .header-nav a{
-          font-size: 22px;
-      }
-
-      .send-btn {
-          font-size: 22px;
-      }
-
-      .form-header__title {
-          font-size: 24px;
-      }
-
-      .feedback-form {
-          padding: 47px 60px 26px;
-      }
-
-
-      .form-input {
-        font-size: 18px;
-        margin-bottom: 26px;
-    }
-
-    .feedback-form {
-        width: 32%;
-    }
-
+     
 }
 
 
 
-@media screen and (max-width: 1330px) {
 
-  
-    .medicine-item {
-        padding: 20px 25px;
-    }
-
-    .medicine-item__text{
-        font-size: 18px;
-    }
-    
-    .medicine-item__icon {
-        height: 60px;
-        width: 50px;
-        margin-right: 25px;
-    }
-
-    .admission-photo {
-        left: -6%;
-    }
-
-    .news-container {
-        flex-direction: column;
-    }
-
-    .news-container-left,
-    .news-container-right {
-        width: 100%;
-    }
-
-    .recent-news-items {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    .recent-news-item {
-      max-width: 350px;
-    }
- 
-}
 @media screen and (max-width: 1584px) {
 
     .about-img::after {
@@ -165,6 +94,23 @@
         height: 608px;
         background-size: cover;
       }
+
+      .gallery {
+          padding: 85px 0px 65px;
+      }
+        .gallery-info h2 {
+        font-size: 52px;
+      }
+
+      .gallery-info p {
+          font-size: 16px;
+      }
+
+      .slider-header {
+        font-size: 52px;
+        line-height: 61px;
+      }
+    
 
     .news-content-title {
         font-size: 52px;
@@ -243,12 +189,94 @@
       }
 }
 
-@media screen and (max-width: 1212px) {
-    .medicine-item:nth-child(3n+1) { order: 1; }
-    .medicine-item:nth-child(3n+2) { order: 1; }
-    .medicine-item:nth-child(3n)   { order: 1; }
+@media screen and (max-width: 1555px)  {
+  .header-slider__bg {
+    max-width: 100%;
+    object-fit: cover;
+    display: block; 
+    height: 450px;
+  } 
+ }
+
+
+@media screen and (max-width: 1490px) {
+    .gallery-slider-wrap {
+            max-width: 687px;
+            height: 296px;
+          margin-left: auto;
+      }
+    
+      .gallery-slider{
+        height: 326px;
+      }
+
+      .gallery-content-item {
+          max-width: 376px;
+      }
+}
+
+@media screen and (max-width: 1330px) {
+
   
     .medicine-item {
+        padding: 20px 25px;
+    }
+
+    .medicine-item__text{
+        font-size: 18px;
+    }
+    
+    .medicine-item__icon {
+        height: 60px;
+        width: 50px;
+        margin-right: 25px;
+    }
+
+    .admission-photo {
+        left: -6%;
+    }
+
+    .news-container {
+        flex-direction: column;
+    }
+
+    .news-container-left,
+    .news-container-right {
+        width: 100%;
+    }
+
+    .recent-news-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .recent-news-item {
+      max-width: 100%;
+    }
+ 
+}
+@media screen and (max-width: 1212px) {
+    .medicine-item-wrap:nth-child(3n+1) { order: 1; }
+    .medicine-item-wrap:nth-child(3n+2) { order: 1; }
+    .medicine-item-wrap:nth-child(3n)   { order: 1; }
+
+    .feedback {
+      flex-direction: column-reverse;
+    }
+
+    .feedback-form,
+    .header-slider {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .header-slider__bg {
+      height: auto;
+    }
+  
+    .medicine-item-wrap {
         flex-basis: 33%;
     }
 
@@ -310,27 +338,44 @@
       
         flex-basis: 30%;
       }
+
+     
       
       .admission__content {
         width: 100%;
       }
        
 
+      .gallery-content-item,
+      .gallery-info {
+          max-width: 100%;
+    }
     .gallery-content {
-        grid-template-areas: "info"
-                            "slider"
-                              "button";
+        flex-direction: column;
       }
 
-      .gallery-slider{
-       
-            height: auto;
+      .gallery-slider-wrap {
+         height: auto;
+         max-width: 100%;
+      }
+      .gallery-slider {
+          max-width: 100%;
+      }
+
+      .gallery-btn {
+          display: none;
+      }
+
+      .gallery-btn-mobile {
+        display: block;
+        margin: 150px auto 0; 
       }
 
       .send-feedback-content {
           flex-direction: column;
           gap: 20px
       }
+      
 
       .send-feedback-content textarea {
           height: 160px;
@@ -349,8 +394,38 @@
   }
   
   @media screen and (max-width: 930px) {
+    .feedback-form {
+      margin-top: 20px;  
+    }
+
+    .slider-header {
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    .header-slider__bg {
+        object-position: 85%;
+    }
+
+    .slider-header-list li {
+      font-size: 16px;
+    }
+
+    .header-slider-link  {
+      font-size: 24px;
+    }
+
+    .header-slider__content {
+      max-width: 49%;
+    }
+
+    .header-slider__bg {
+      height: 450px;
+    }
+
+
   
-    .medicine-item {
+    .medicine-item-wrap {
         flex-basis: 50%;
     }
 
@@ -439,6 +514,35 @@
    
 }
 
+@media screen and (max-width: 680px) {
+
+  .header-slider__content{
+    left: 35px
+  }
+
+  .header-slider__bg {
+    height: 350px;
+  }
+
+  .slider-header {
+    font-size: 20px;
+    line-height: 24px;;
+  }
+
+  .slider-header-list {
+    margin-bottom: 12px;
+  }
+
+  .slider-header-list li {
+    font-size: 13px;
+  }
+
+  .header-slider-link {
+    font-size: 12px;
+  }
+}
+
+
 @media screen and (max-width: 640px) {
 
     .choose-items {
@@ -456,6 +560,23 @@
 
 @media screen and (max-width: 540px) {
 
+  .header-slider__bg {
+    height: 230px;
+  }
+  .slick-arrow {
+    width: 22px;
+    height: 43px;
+  }
+
+  .feedback-form {
+    margin-top: 10px;  
+  }
+
+  .slick-arrow img {
+    width: 7px;
+    height: 12px;
+  }
+
     .news-content-subtitle span{
         font-size: 13px;
       }
@@ -464,21 +585,21 @@
         font-size: 24px;
     }
 
-    .medicine-item {
+    .medicine-item-wrap {
         flex-basis: 100%;
     }
 
-    .medicine-item:nth-child(4n),
-    .medicine-item:nth-child(4n + 1) {
+    .medicine-item-wrap:nth-child(4n),
+    .medicine-item-wrap:nth-child(4n + 1) {
         background-color: var(--main-color);
     }
     
-    .medicine-item:nth-child(odd) {
+    .medicine-item-wrap:nth-child(odd) {
         background-color: var(--main-color);
      }
  
      
-     .medicine-item:nth-child(even) {
+     .medicine-item-wrap:nth-child(even) {
          background-color: var(--main-color--light);
       }
 
@@ -538,11 +659,25 @@
     .feedback-comments-slider .slick-dots {
         margin-top: 26px;
     }
-  
-    
 }
   
 
+
+@media screen and (max-width: 430px) {
+
+  .header-slider__bg {
+    object-fit: 75%;
+  }
+
+  .slider-header-list {
+    padding-left: 20px;
+  }
+
+  .slider-header-list li{
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
 
 
 
