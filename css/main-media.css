@@ -155,11 +155,6 @@
       display: none;
     }
 
-    .header-nav a {
-      font-size: 18px;
-      padding: 18px;
-    }
-
    }
 
    @media screen and (max-width: 930px)  {
@@ -167,6 +162,14 @@
         width: 75%;
     }
 
+    .header {
+      padding: 14px 0;
+      margin-bottom: 0;
+    }
+
+    .header-nav {
+      display: none;
+    }
     .organizations img {
       width: 15%;
     }
@@ -177,7 +180,7 @@
 
    .header-nav ul .header-nav-list-item:first-child {
      background-color: transparent;
-     color: var(--main-color);
+     color: var(--assistant-color);
    }
 
     .header-content {
@@ -188,7 +191,7 @@
       display: block;
     }
 
-    .header-contacts { padding: 0px 20px;
+    .header-contacts { 
       justify-content: space-between;
     }
 
@@ -250,12 +253,29 @@
     }
 
     .header-content-wrap {
-        padding: 20px 0;
+        padding: 20px;
     }
 
     .header-contacts {
-      padding: 7px 0;
+    
+      padding: 7px 20px;
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .header-contact {
+      margin-right: 0;
+    }
+
+    #menu {
+      margin-right: 20px;
+    }
+
+    .change-language {
+      margin-right: 20px;
+    }
+
+    .social {
+      margin-right: 0;
     }
 
     .header-nav li:hover {
@@ -300,10 +320,20 @@
     }
   }
  
-  @media screen and (max-width: 770px) {
-    .logo {
-      width: 46%;
+  @media screen and (max-width: 690px) {
+
+    .section {
+      margin-bottom: 50px;
     }
+
+    .logo {
+      max-width: 270px;
+    }
+
+    .header-contact__item {
+      font-size: 16px;
+    }
+
   }
 
    @media screen and (max-width: 540px)  {
@@ -326,6 +356,25 @@
      padding: 0px 10px;
    }
 
+   .section {
+    margin-bottom: 30px;
+  }
+
+   .header-contact__item {
+     font-size: 14px;
+   }
+   .logo {
+     max-width: 190px;
+   }
+
+   .lang-text {
+     font-size: 20px;
+   }
+
+   .header-nav-list-item {
+     font-size: 16px;
+     padding: 10px 0;
+   }
     .title-block {
         width: 100%;
     }
@@ -340,9 +389,41 @@
         font-size: 13px;
         line-height: 15px;
       }
+      .footer-bg {
+        padding: 45px 0;
+      }
+
    }
 
    @media screen and (max-width: 430px) {
+
+    .lang-text {
+      font-size: 14px;
+    }
+
+    .header-contacts {
+      padding: 7px 10px;
+    }
+
+    .header-contact__item {
+      font-size: 12px;
+    }
+
+    .header-content-wrap {
+      padding: 10px;
+    }
+
+    #menu,
+    .change-language {
+      margin-right: 14px;
+    }
+    .social {
+      width: 45px;
+    }
+    .social img {
+      width: 20px;
+      height: 20px;
+    }
 
     .feedback-form {
       padding: 22px 46px;

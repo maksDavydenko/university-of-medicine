@@ -208,6 +208,8 @@
         font-size: 16px;
         line-height: 16px;
       }
+
+   
 }
 
 @media screen and (max-width: 1555px)  {
@@ -347,6 +349,10 @@
       flex-direction: column-reverse;
     }
 
+    .section  {
+      margin-bottom: 100px;
+    }
+
     .feedback-form,
     .header-slider {
       width: 100%;
@@ -391,22 +397,29 @@
       .choose-btn {
           margin: auto;
       }
-    .about-block {
-        flex-basis: 100%;
-    }
-
-    .about-img {
-       display: none;
-      }
-      
-      .about-img-mobile {
-        display: block;
-        margin-left: 20px;
-        margin-bottom: 40px;
+    
+      .about-img {
+        margin-bottom: 20px;
       }
 
-      .about-img-mobile img {
-        max-width: 60%;
+      .about-img img {
+        max-width: 430px
+      }
+
+      .about-item__icon {
+        width: 55px;
+      }
+
+      .about-content-text-block {
+        margin-bottom: 0;
+      }
+
+      .about-img::after {
+        background-image: none;
+      }
+
+      .about-content {
+        gap: 20px;
       }
 
     .admission-header {
@@ -538,6 +551,28 @@
      .medicine-item-wrap:nth-child(4n + 1) .medicine-item {
         background-color: var(--main-color);
     }
+    .about-block {
+      flex-basis: 100%;
+  }
+    .about-img {
+      display: none;
+     }
+     
+     .about-img-mobile {
+       display: block;
+       margin-bottom: 20px;
+     }
+
+     .about-img-mobile img {
+       max-width: 100%;
+       object-fit: cover;
+       display: block;
+     }
+
+     .about-item-btn {
+     display: flex;
+     justify-content: center;
+     }
 
     .admission-header {
         font-size: 32px;
@@ -567,6 +602,10 @@
         margin: auto;
       }
 
+      .footer-bg {
+        padding: 50px 0;
+      }
+
      
 
 }
@@ -574,6 +613,10 @@
 @media screen and (max-width: 850px) {
   .recent-news-item {
     max-width: 100%;
+  }
+
+  .section  {
+    margin-bottom: 70px;
   }
 }
 
@@ -601,7 +644,7 @@
     .checked-news-btn {
         width: 45%;
         font-size: 13px;
-        line-height: 15px;
+        line-height: 12px;
         padding: 10px 20px;
     }
 
@@ -678,6 +721,7 @@
 }
 
 @media screen and (max-width: 540px) {
+  
 
   .header-slider__bg {
     height: 230px;
@@ -695,7 +739,9 @@
     width: 7px;
     height: 12px;
   }
-
+  .about-item__text {
+    font-size: 13px;
+  }
     .news-content-subtitle span{
         font-size: 13px;
       }

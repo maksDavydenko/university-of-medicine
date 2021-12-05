@@ -53,6 +53,11 @@
   display: none;
 }
 
+.header-content-item {
+  display: flex;
+  align-items: center;
+}
+
 #menu {
   width: 23px;
   height: 23px;
@@ -110,7 +115,7 @@
 
 
 .header-nav ul .header-nav-list-item:first-child {
-  background-color: var(--main-color);
+  background-color: var(--assistant-color);
   color: var(--light-color);
 }
 
@@ -333,6 +338,8 @@
 .change-language-list {
   list-style: none;
   display: none;
+  position: absolute;
+  top: 40px;
 }
 
 .change-language-list li {
@@ -343,6 +350,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .language-active__text {

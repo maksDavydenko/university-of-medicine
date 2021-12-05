@@ -48,7 +48,7 @@
 
 
             <div class="header-content-wrap">
-                <div class="header-content-left">
+                <div class="header-content-item">
                     <div id="menu">
                         <img src="./img/icons/menu.svg" alt="menu">
                     </div>
@@ -57,11 +57,11 @@
                     </a>
                 </div>
 
-                <div class="header-content-right">
-                    <div class="change-language" id="change-language">
+                <div class="header-content-item">
+                    <div class="change-language" id="change-language-mobile">
                         <span class="lang-text">Eng</span>
                         <img src="./img/icons/language-icon.svg" alt=">">
-                        <ul class="change-language-list" id="language-menu">
+                        <ul class="change-language-list" id="language-menu-mobile">
                             <li class="language-active"><span>Eng</span>
                                 <div class="language-dot"></div>
                             </li>
@@ -136,10 +136,11 @@
                                     <img src="./img/icons/facebook.svg" alt="">
                                 </a>
                             </div>
-
-                            <div class="change-language" id="change-language">
-                                <span class="lang-text">Eng</span>
-                                <img src="./img/icons/language-icon.svg" alt=">">
+                            <div class="change-language-wrap">
+                                <div class="change-language" id="change-language">
+                                    <span class="lang-text">Eng</span>
+                                    <img src="./img/icons/language-icon.svg" alt=">">
+                                </div>
                                 <ul class="change-language-list" id="language-menu">
                                     <li class="language-active"><span>Eng</span>
                                         <div class="language-dot"></div>
@@ -183,7 +184,7 @@
                         <li class="header-nav-list-item">
                             Admission
                             <ul class="header-nav-sublist">
-                                <li><a href="">
+                                <li><a href="./about.html">
                                         GENERAL INFORMATION
                                     </a></li>
                                 <li><a href="">
@@ -394,7 +395,12 @@
                                 The degrees have been validated by WHO and UNESCO The best thing about studying MBBS in
                                 Russia that there is no entrance test for admission in Russian medical
                                 colleges/universities. </p>
+
                         </div>
+                        <div class="about-img-mobile">
+                            <img src="./img/photos/doctors.png" alt="doctors">
+                        </div>
+
                         <div class="about-items">
                             <div class="about-item">
                                 <img class="about-item__icon" src="./img/icons/trophy 1.svg" alt="study">
@@ -1192,6 +1198,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/languge-switch.js"></script>
 </body>
 
