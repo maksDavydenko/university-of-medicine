@@ -22,7 +22,6 @@
 <body>
     <header class="header">
         <div class="header-content-mobile">
-
             <div class="header-contacts">
                 <div class="header-contact">
                     <div class="header-contact__icon">
@@ -50,17 +49,20 @@
             <div class="header-content-wrap">
                 <div class="header-content-item">
                     <div id="menu">
-                        <img src="./img/icons/menu.svg" alt="menu">
+                        <img src="./img/icons/menu.svg" alt="menu" class="menu-btn">
+                        <img src="./img/icons/close.svg" alt="close" class="menu-close">
                     </div>
-                    <a href="#" class="logo">
+                    <a href=" #" class="logo">
                         <img src="./img/icons/logo.svg" alt="logo">
                     </a>
                 </div>
 
                 <div class="header-content-item">
-                    <div class="change-language" id="change-language-mobile">
-                        <span class="lang-text">Eng</span>
-                        <img src="./img/icons/language-icon.svg" alt=">">
+                    <div class="change-language-wrap">
+                        <div class="change-language" id="change-language-mobile">
+                            <span class="lang-text">Eng</span>
+                            <img src="./img/icons/language-icon.svg" alt=">">
+                        </div>
                         <ul class="change-language-list" id="language-menu-mobile">
                             <li class="language-active"><span>Eng</span>
                                 <div class="language-dot"></div>
@@ -106,8 +108,10 @@
                                         <img src="./img/icons/phone.svg" alt="phone">
                                     </div>
                                     <div class="header-contact-wrap">
-                                        <a href="tel:+380637447626" class="header-contact__item">(+380) 63 744-76-26</a>
-                                        <a href="tel:+380445760600" class="header-contact__item">(+380) 44 576-06-00</a>
+                                        <a href="tel:+380637447626" class="header-contact__item">(+380) 63
+                                            744-76-26</a>
+                                        <a href="tel:+380445760600" class="header-contact__item">(+380) 44
+                                            576-06-00</a>
                                     </div>
                                 </div>
                                 <div class="header-contact">
@@ -155,8 +159,8 @@
                             <div class="search">
                                 <button class="search-btn">
                                     <img class="search-icon" src="./img/icons/search-icon.svg" alt="search">
-                                    <input type="text" class="search-input" placeholder="Search">
                                 </button>
+                                <input type="text" class="search-input" placeholder="Search">
                             </div>
 
                             <div class="header-external-links">
@@ -170,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <nav class="header-nav">
+                <nav class="header-nav header-nav-mobile">
                     <div class="search search-mobile">
                         <button class="search-btn">
                             <img class="search-icon" src="./img/icons/search-icon.svg" alt="search">
@@ -751,30 +755,48 @@
                                         News KMU</h2>
                                     <div class="checked-news">
                                         <div class="checked-news-buttons">
-                                            <button class="checked-news-btn checked-news-btn--active">
+                                            <button class="checked-news-btn checked-news-btn--active" data-item="1">
                                                 <span>Conferens in the KMU</span>
                                                 <span>→</span>
                                             </button>
-                                            <button class="checked-news-btn">
+                                            <button class="checked-news-btn" data-item="2">
                                                 <span>Conferens in the KMU</span>
                                                 <span>→</span>
                                             </button>
                                         </div>
-                                        <div class="news-item-content">
-                                            <div class="news-item-title">
-                                                Conferens in the KMU
+                                        <div class="js-news-items">
+                                            <div class="news-item-content" data-item="1">
+                                                <div class="news-item-title">
+                                                    Conferens in the KMU
+                                                </div>
+                                                <div class="news-date">
+                                                    <img src="./img/icons/calendar.svg" alt="calendar">
+                                                    <span>12.11.2021</span>
+                                                </div>
+                                                <p class="news-item-text">
+                                                    The degrees have been validated by WHO and UNESCO The best thing
+                                                    about
+                                                    studying MBBS in Russia that there is no entrance...
+                                                </p>
+                                                <a href="#" class="news-item-link">
+                                                    Read more →
+                                                </a>
                                             </div>
-                                            <div class="news-date">
-                                                <img src="./img/icons/calendar.svg" alt="calendar">
-                                                <span>12.11.2021</span>
+                                            <div class="news-item-content" data-item="2">
+                                                <div class="news-item-title">
+                                                    Conferens in the KMU
+                                                </div>
+                                                <div class="news-date">
+                                                    <img src="./img/icons/calendar.svg" alt="calendar">
+                                                    <span>12.11.2021</span>
+                                                </div>
+                                                <p class="news-item-text">
+                                                    test info
+                                                </p>
+                                                <a href="#" class="news-item-link">
+                                                    Read more →
+                                                </a>
                                             </div>
-                                            <p class="news-item-text">
-                                                The degrees have been validated by WHO and UNESCO The best thing about
-                                                studying MBBS in Russia that there is no entrance...
-                                            </p>
-                                            <a href="#" class="news-item-link">
-                                                Read more →
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1200,6 +1222,8 @@
     <script src="./js/scroll.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/languge-switch.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/switch-news.js"></script>
 </body>
 
 </html>
