@@ -9,7 +9,6 @@ const closeMenu = () => {
     langMenu.style.display = 'none';
 }
 
-
 LanguageBtn.addEventListener('click', () => {
     langMenu.style.display = 'block';
 });
@@ -38,3 +37,21 @@ langMenuMobile.addEventListener('click', e => {
     closeMenu()
 });
 
+langMenu.addEventListener('click', e => {
+    const list = Array.from(langMenu.children);
+    list.forEach(item => {
+        item.classList.contains('language-active') && item.classList.remove('language-active');
+    })
+
+    const langitem = e.target.closest('Li');
+    langitem.classList.add('language-active');
+    langMenu.style.display = 'none';
+
+    const langTextItems = Array.from(langText);
+
+    langTextItems.forEach(item => {
+        item.innerText = langitem.textContent.trim()
+    });
+
+    closeMenu()
+});

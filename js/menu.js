@@ -20,3 +20,25 @@ menuBtn.addEventListener('click', () => {
 })
 
 
+
+menuList.addEventListener('click', e => {
+    const item = e.target.closest(".header-nav-list-item");
+
+    if (item.classList.contains('no-items')) {
+        return;
+    }
+
+    item.classList.toggle('item-close');
+
+    const list = Array.from(item.children);
+
+    list.forEach(item => {
+
+        if (item.classList.contains('header-nav-sublist')) {
+            item.classList.toggle('open');
+            return;
+        }
+
+    })
+
+});

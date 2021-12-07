@@ -740,15 +740,12 @@
     .choose-item__text {
         font-size: 13px;
     }
+
     .medicine-item-wrap {
       flex-basis: 100%;
       
   }
     
-
-   
-    
-
     .medicine-photo {
       width: 60%;
     }
@@ -817,9 +814,11 @@
     .gallery-slider-wrap{
       height: 202px;
     }
+
     .gallery-btn-mobile{
-      margin-top: 70px;
+      margin-top: 35px;
     }
+    
     .gallery-btn-mobile button{
       padding: 6px;
       font-size: 13px;
@@ -878,9 +877,7 @@
         font-size: 13px;
         line-height: 15px;
     }
-
    
-
     .feedback-comments-slider .slick-dots {
         margin-top: 26px;
     }
