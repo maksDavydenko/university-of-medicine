@@ -25,9 +25,7 @@
 
     .choose::after {
       right: 0;
-      -webkit-transform: translate(0, -50%) rotate(180deg);
-          -ms-transform: translate(0, -50%) rotate(180deg);
-              transform: translate(0, -50%) rotate(180deg);
+      transform: translate(0, -50%) rotate(180deg);
     }
 
     .choose::before {
@@ -67,8 +65,7 @@
     .admission-step {
         text-align: center;
         color: var(--light-color);
-        -ms-flex-preferred-size: 30%;
-            flex-basis: 30%;
+        flex-basis: 30%;
       }
       
       .admission-step__title {
@@ -196,8 +193,7 @@
       }
 
       .footer-item {
-          -ms-flex-preferred-size: 228px;
-              flex-basis: 228px;
+          flex-basis: 228px;
       }
 
       .footer-item__title {
@@ -216,8 +212,7 @@
 @media screen and (max-width: 1555px)  {
   .header-slider__bg {
     max-width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     display: block; 
     height: 450px;
   } 
@@ -225,8 +220,7 @@
  
   
   .about-item {
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
+    flex-basis: 45%;
   }
   .about-item__icon {
     width: 76px;
@@ -314,10 +308,7 @@
     }
 
     .news-container {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        flex-direction: column;
     }
 
     .news-container-left,
@@ -326,14 +317,9 @@
     }
 
     .recent-news-items {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: wrap;
         gap: 30px;
     }
 
@@ -351,15 +337,12 @@
 }
 
 @media screen and (max-width: 1212px) {
-    .medicine-item-wrap:nth-child(3n+1) { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
-    .medicine-item-wrap:nth-child(3n+2) { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
-    .medicine-item-wrap:nth-child(3n)   { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+    .medicine-item-wrap:nth-child(3n+1) { order: 1; }
+    .medicine-item-wrap:nth-child(3n+2) { order: 1; }
+    .medicine-item-wrap:nth-child(3n)   { order: 1; }
 
     .feedback {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse;
+      flex-direction: column-reverse;
     }
 
     .section  {
@@ -377,12 +360,11 @@
     }
   
     .medicine-item-wrap {
-        -ms-flex-preferred-size: 33%;
-            flex-basis: 33%;
+        flex-basis: 33%;
     }
 
     .choose-content {
-            grid-template-areas: "info"
+        grid-template-areas: "info"
                                 "content"
                               "button";
                               grid-gap: 50px;
@@ -394,8 +376,7 @@
 
       .choose-items {
         margin-top: 50px;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
+          flex-wrap: wrap;
           gap: 65px 20px;
       }
 
@@ -463,9 +444,7 @@
 
       .admission-step {
       
-        -ms-flex-preferred-size: 30%;
-      
-            flex-basis: 30%;
+        flex-basis: 30%;
       }
 
      
@@ -483,10 +462,7 @@
           max-width: 100%;
     }
     .gallery-content {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        flex-direction: column;
       }
 
       .gallery-slider-wrap {
@@ -511,10 +487,7 @@
       }
 
       .send-feedback-content {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
+          flex-direction: column;
           gap: 20px
       }
       
@@ -546,8 +519,7 @@
     }
 
     .header-slider__bg {
-        -o-object-position: 85%;
-           object-position: 85%;
+        object-position: 85%;
     }
 
     .slider-header-list li {
@@ -571,8 +543,7 @@
     }
   
     .medicine-item-wrap {
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+        flex-basis: 50%;
     }
 
     .medicine-item-wrap:nth-child(odd) .medicine-item {
@@ -591,8 +562,7 @@
     
 
     .about-block {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+      flex-basis: 100%;
   }
     .about-img {
       display: none;
@@ -628,16 +598,14 @@
 
      .about-img-mobile img {
        max-width: 100%;
-       -o-object-fit: cover;
-          object-fit: cover;
+       object-fit: cover;
        display: block;
      }
 
      .about-img--float img {
         max-width: 280px;
         display: block;
-        -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
      }
 
      .about-img--float::after {
@@ -649,12 +617,8 @@
      }
 
      .about-item-btn {
-     display: -webkit-box;
-     display: -ms-flexbox;
      display: flex;
-     -webkit-box-pack: center;
-         -ms-flex-pack: center;
-             justify-content: center;
+     justify-content: center;
      }
 
     .admission-header {
@@ -663,18 +627,12 @@
     }
 
     .admission-steps {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        flex-direction: column;
         gap: 50px;
     }
 
     .admissin-form__content {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        flex-direction: column;
         gap: 13px;
     }
 
@@ -692,8 +650,7 @@
       }
 
       .choose-item {
-        -ms-flex-preferred-size: 250px;
-            flex-basis: 250px;
+        flex-basis: 250px;
         margin: auto;
       }
 
@@ -722,10 +679,7 @@
 
 @media screen and (max-width: 780px) {
     .news-item {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        flex-direction: column;
     }
 
     .news-item__img {
@@ -734,20 +688,12 @@
     }
 
     .checked-news {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        flex-direction: column;
     }
 
     .checked-news-buttons {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-between;
         max-width: 100%;
         margin-right: 0;
     }
@@ -816,10 +762,7 @@
 @media screen and (max-width: 640px) {
 
     .choose-items {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      flex-direction: column;
     }
 
     .choose-item {
@@ -834,8 +777,7 @@
       padding: 8px 33px;
     }
     .medicine-item-wrap {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+      flex-basis: 100%;
   }
 
   .medicine-item::before {
@@ -957,10 +899,7 @@
     }
       
       .footer-content {
-       -webkit-box-orient: vertical;
-       -webkit-box-direction: normal;
-           -ms-flex-direction: column;
-               flex-direction: column;
+       flex-direction: column;
     }
     
     .comment-author__avatar {
@@ -1033,8 +972,7 @@
       font-size: 16px;
     }
   .header-slider__bg {
-    -o-object-fit: 75%;
-       object-fit: 75%;
+    object-fit: 75%;
   }
 
   .slider-header-list {
@@ -1118,6 +1056,7 @@
   
 }
 }
+
 
 
 
