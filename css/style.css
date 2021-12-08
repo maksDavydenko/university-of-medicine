@@ -488,6 +488,7 @@
 
 .news-content-subtitle {
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .news-content-subtitle span{
@@ -521,6 +522,7 @@
 .news-content-title {
   color: var(--main-color);
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .news-item__img {
