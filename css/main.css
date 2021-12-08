@@ -351,6 +351,7 @@
   display: none;
   position: absolute;
   top: 30px;
+  z-index: 9;
 }
 
 .change-language-list li {

@@ -8,13 +8,13 @@ menuBtn.addEventListener('click', () => {
     if (iconMenu.style.display === 'block') {
         iconClose.style.display = 'block';
         iconMenu.style.display = 'none';
-        menuList.style.display = 'none'
+        menuList.style.display = 'block'
     }
 
     else {
         iconClose.style.display = 'none';
         iconMenu.style.display = 'block';
-        menuList.style.display = 'block'
+        menuList.style.display = 'none'
     }
 
 })
