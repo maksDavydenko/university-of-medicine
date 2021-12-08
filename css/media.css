@@ -603,15 +603,17 @@
      }
 
      .about-img--float img {
-        max-width: 330px;
+        max-width: 280px;
+        display: block;
+        object-fit: cover;
      }
 
      .about-img--float::after {
-        width: 380px;
-        height: 380px;
-        right: -7%;
-        z-index: -1;
-        top: -16%
+      width: 280px;
+      height: 280px;
+      top: -30px;
+      right: -30px;
+      z-index: 1;
      }
 
      .about-item-btn {
@@ -928,6 +930,10 @@
       max-width: 220px;
     }
 
+    .about-img--float::after {
+      right: -8px;
+    }
+    
     .admission-step__title {
       font-size: 34px;
       line-height: 40px;
