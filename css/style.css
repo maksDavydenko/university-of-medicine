@@ -249,8 +249,6 @@
 }
 
 .medicine-item {
- 
-  /* position: absolute; */
   padding: 43px 50px;
   color: var(--light-color);
   display: flex;
@@ -577,6 +575,7 @@
 }
 
 .checked-news-btn {
+  border: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -730,10 +729,6 @@
   margin-bottom: 37px;
 }
 
-.choose-item-img---main {
-
-}
-
 .choose-item-img--shadow {
   bottom: 20px;
   position: absolute;
@@ -837,9 +832,6 @@
 
 /* send-feedback */
 
-.send-feedback {
-
-}
 
 .send-feedback__title {
   color: var(--assistant-color);
@@ -875,7 +867,6 @@
   padding-top: 15px;
 }
 
-
 /* organizations */
 
 .organizations-block {
@@ -887,8 +878,6 @@
   display: flex;
   justify-content: space-between;
 }
-
-
 
 .feedback-comments-slider .slick-list {
   padding: 0 40px;
@@ -952,13 +941,9 @@
   margin-right: 42px;
 }
 
-
 .blockquote {
   margin-bottom: 43px;
 }
-
-
-
 
 /* footer */
 

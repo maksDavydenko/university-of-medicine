@@ -102,9 +102,6 @@
      
 }
 
-
-
-
 @media screen and (max-width: 1584px) {
 
     .about-img::after {
@@ -247,7 +244,6 @@
   
   
  }
-
 
 @media screen and (max-width: 1490px) {
     .gallery-slider-wrap {
@@ -554,7 +550,6 @@
     .medicine-item-wrap:nth-child(odd) .medicine-item {
        background-color: var(--main-color--light);
     }
-
     
     .medicine-item-wrap:nth-child(even) .medicine-item {
         background-color: var(--main-color--light);
@@ -564,6 +559,9 @@
      .medicine-item-wrap:nth-child(4n + 1) .medicine-item {
         background-color: var(--main-color);
     }
+
+    
+
     .about-block {
       flex-basis: 100%;
   }
@@ -618,6 +616,11 @@
     .admissin-form__content {
         flex-direction: column;
         gap: 13px;
+    }
+
+    .admission__content {
+      width: 80%;
+      margin: 0 auto;
     }
 
     .admissin-form-btn {
@@ -678,8 +681,6 @@
         line-height: 12px;
         padding: 10px 20px;
     }
-
-   
 }
 
 @media screen and (max-width: 680px) {
@@ -741,9 +742,17 @@
         font-size: 13px;
     }
 
+    .medicine-item {
+      padding: 8px 33px;
+    }
     .medicine-item-wrap {
       flex-basis: 100%;
-      
+  }
+
+  .medicine-item::before {
+    border: 15px solid transparent;
+    border-right: 15px solid var(--assistant-color);
+    border-bottom: 15px solid var(--assistant-color);
   }
     
     .medicine-photo {
@@ -761,6 +770,12 @@
      
      .medicine-item-wrap:nth-child(even) .medicine-item {
          background-color: var(--main-color--light);
+      }
+
+      .medicine-item__link  {
+        position: static;
+        margin-top: 18px;
+        text-align: center;
       }
 }
 
@@ -793,8 +808,6 @@
     .news-content-title {
         font-size: 24px;
     }
-
-   
 
     .gallery {
       padding: 30px 0;
@@ -884,6 +897,17 @@
 
     .about-img--float img {
       max-width: 220px;
+    }
+
+    .admission-step__title {
+      font-size: 34px;
+      line-height: 40px;
+    }
+
+    .admission-header {
+      border-top: 4px solid var(--main-color--light);
+    border-left: 4px solid var(--main-color--light);
+    border-right: 4px solid var(--main-color--light);
     }
 }
   

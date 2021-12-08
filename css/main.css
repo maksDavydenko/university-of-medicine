@@ -415,6 +415,7 @@
   color: var(--light-color);
   cursor: pointer;
   font-size: 30px;
+  border: none;
 }
 
 h2 {

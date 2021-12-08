@@ -11,6 +11,7 @@ menuBtn.addEventListener('click', () => {
         iconMenu.style.display = 'none';
         menuList.style.display = 'block';
         headerWrap.style.position = 'relative';
+        window.scroll(0, 0);
     }
 
     else {
