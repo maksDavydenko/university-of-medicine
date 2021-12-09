@@ -7,16 +7,43 @@ const langMenuMobile = document.getElementById('language-menu-mobile');
 
 const closeMenu = () => {
     langMenu.style.display = 'none';
+    langMenuMobile.style.display = 'none';
 }
 
+const handleCloseMenu = e => {
+    if (e.target.closest('#change-language') ||
+        e.target.closest('#change-language-mobile')) {
+        return;
+    }
+
+    else {
+        closeMenu();
+    }
+}
+
+document.addEventListener('click', handleCloseMenu, true);
+
 LanguageBtn.addEventListener('click', () => {
-    langMenu.style.display = 'block';
+    if (langMenu.style.display === 'block') {
+        langMenu.style.display = 'none';
+        document.addEventListener('click', handleCloseMenu, true);
+    }
+    else {
+        langMenu.style.display = 'block';
+        document.removeEventListener('click');
+    };
 });
 
 LanguageBtnMobile.addEventListener('click', () => {
-    langMenuMobile.style.display = 'block';
+    if (langMenuMobile.style.display === 'block') {
+        langMenuMobile.style.display = 'none';
+        document.addEventListener('click', handleCloseMenu, true);
+    }
+    else {
+        langMenuMobile.style.display = 'block';
+        document.removeEventListener('click')
+    };
 });
-
 
 langMenuMobile.addEventListener('click', e => {
     const list = Array.from(langMenuMobile.children);
@@ -34,7 +61,7 @@ langMenuMobile.addEventListener('click', e => {
         item.innerText = langitem.textContent.trim()
     });
 
-    closeMenu()
+    closeMenu();
 });
 
 langMenu.addEventListener('click', e => {
@@ -53,5 +80,5 @@ langMenu.addEventListener('click', e => {
         item.innerText = langitem.textContent.trim()
     });
 
-    closeMenu()
+    closeMenu();
 });

@@ -675,7 +675,10 @@
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.checked-news-btn:first-child {
   margin-bottom: 30px;
 }
 

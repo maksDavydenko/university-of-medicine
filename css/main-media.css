@@ -69,6 +69,7 @@
     .header-nav-list-item {
       font-size: 22px;
       padding: 20px;
+      line-height: 22px;
     }
 
     .header-nav-sublist {
@@ -403,7 +404,7 @@
     }
 
     .social {
-      width: 75px;
+      width: 65px;
       height: auto;
     }
 

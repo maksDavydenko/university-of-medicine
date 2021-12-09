@@ -758,6 +758,10 @@
         line-height: 12px;
         padding: 10px 20px;
     }
+
+    .checked-news-btn:first-child {
+      margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -1115,9 +1119,6 @@
   width: 150px;
   height: 150px;
   top: -19px;
-  
+ 
 }
 }
-
-
-
