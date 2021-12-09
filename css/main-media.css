@@ -16,6 +16,7 @@
 
     .header-contact {
       margin-right: 20px;
+      align-items: center;
     }
 
     .header-contact__item {
@@ -24,6 +25,7 @@
 
     .header-contact__icon {
       padding: 0 2px;
+      height: 36px;
     }
     
     .header-contact__icon img {
@@ -73,7 +75,7 @@
     }
 
     .header-nav-sublist {
-      top: 75px;
+      top: 58px;
     }
 
 
@@ -154,9 +156,10 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
+    }
+
+    .header-nav {
+      visibility: visible !important;
     }
    }
 
@@ -171,12 +174,14 @@
     }
 
     .header-nav {
-      display: none;
       position: absolute;
       width: 100%;
+      top: -999px;
       left: 0;
+      z-index: -1;
       right: 0;
-      background-color: var(--light-color);
+      background-color: rgba(255,255,255, 0.85);
+      transition: 0.3s;
     }
 
     .organizations img {
@@ -199,10 +204,6 @@
      background-color: transparent;
      color: var(--assistant-color);
      border: none;
-   }
-
-   .header-nav {
-    z-index: 2;
    }
 
     .header-content {
@@ -242,12 +243,12 @@
       height: 12px;
       z-index: 2;
     }
-    
 
     .header-nav-sublist {
       display: none;
       width: 100%;
       position: static;
+      filter: none;
     }
 
     .item-open::after {
@@ -264,7 +265,8 @@
 
     .item-close {
       position: relative;
-      color: var(--assistant-color);
+      color: var(--assistant-color) !important;
+      border-bottom: 1px solid #ccc;
     }
 
     .item-close::after {
@@ -281,7 +283,12 @@
       }
 
     .open {
+      margin-top: 10px;
+      padding: 5px 0;
       display: block;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
     }
 
     .header-nav-sublist li {
@@ -289,6 +296,7 @@
               box-shadow: none;
       border: none;
       padding: 0;
+      background-color: transparent;
     }
 
 
@@ -506,8 +514,8 @@
     margin-bottom: 30px;
   }
    .header-contact__item {
-     font-size: 13px;
-     line-height: 17px;
+    font-size: 11px;
+    line-height: 12px;
    }
    
    .header-nav-list{
@@ -516,6 +524,8 @@
 
    .header-contact__icon {
      padding: 0 1px;
+     width: 13px;
+     height: 25px;
    }
 
    .header-nav-list-item::after {
