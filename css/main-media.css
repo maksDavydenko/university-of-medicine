@@ -135,6 +135,54 @@
    }
 
 
+   @media screen and (max-width: 1395px) {
+    #header-sticky
+    .header-external-links a {
+      padding: 10px 20px;
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+
+    #header-sticky .search-btn {
+      width: 38px;
+    height: 38px
+    }
+
+    #header-sticky .search-icon {
+      width: 18px;
+      height: 18px;
+  }
+   }
+
+   @media screen and (max-width: 1152px) {
+    #header-sticky .logo {
+      width: 190px;
+    }
+
+    #header-sticky
+    .header-contact__item {
+      font-size: 10px;
+      line-height: 17px;
+    }
+
+    #header-sticky .header-external-links a {
+      padding: 7px 10px;
+      font-size: 14px;
+      line-height: 14px;
+   } 
+
+   #header-sticky .search-btn {
+     width: 30px;
+     height: 30px;
+   }
+
+   #header-sticky .search-icon {
+    width: 15px;
+    height: 15px;
+ }
+  }
+
    @media screen and (max-width: 1212px) {
     .logo {
       max-width: 350px;

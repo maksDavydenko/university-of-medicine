@@ -1,5 +1,8 @@
 @media screen and (max-width: 1875px) {
-
+  .feedback-gap {
+    margin-top: 350px;
+  }
+  
   .header-slider {
       width: 66%;
   }
@@ -536,6 +539,13 @@
   }
   
   @media screen and (max-width: 930px) {
+    #header-sticky {
+      display: none;
+    }
+    .feedback-gap {
+      margin-top: 240px;
+    }
+
     .feedback-form {
       margin-top: 20px;  
     }
@@ -766,6 +776,10 @@
 
 @media screen and (max-width: 680px) {
 
+ .feedback-gap {
+      margin-top: 170px;
+    }
+
   .header-slider__content{
     left: 35px
   }
@@ -874,7 +888,9 @@
 
 @media screen and (max-width: 540px) {
   
-
+  .feedback-gap {
+    margin-top: 135px;
+  }
   .header-slider__bg {
     height: 230px;
   }

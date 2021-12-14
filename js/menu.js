@@ -9,7 +9,6 @@ menuBtn.addEventListener('click', () => {
     if (iconMenu.style.display === 'block') {
         iconClose.style.display = 'block';
         iconMenu.style.display = 'none';
-        // menuList.style.display = 'block';
         headerWrap.style.position = 'relative';
         menuList.style.top = '0';
         window.scroll(0, 0);
@@ -18,10 +17,8 @@ menuBtn.addEventListener('click', () => {
     else {
         iconClose.style.display = 'none';
         iconMenu.style.display = 'block';
-        // menuList.style.display = 'none';
-        headerWrap.style.position = 'sticky';
+        headerWrap.style.position = 'fixed';
         menuList.style.top = '-999px';
-
     }
 
 })
