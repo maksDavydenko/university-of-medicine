@@ -56,6 +56,11 @@
       height: 53px;
     }
 
+    .search-input {
+      width: 234px;
+      padding: 14px 12px;
+    }
+
     .search-icon {
       width: 21px;
       height: 21px;
@@ -153,6 +158,12 @@
       width: 18px;
       height: 18px;
   }
+
+  #header-sticky .search-input {
+    font-size: 16px;
+    width: 148px;
+    padding: 11px 12px;
+  }
    }
 
    @media screen and (max-width: 1152px) {
@@ -181,6 +192,11 @@
     width: 15px;
     height: 15px;
  }
+
+ #header-sticky .search-input {
+  width: 118px;
+  padding: 7px 12px;
+}
   }
 
    @media screen and (max-width: 1212px) {
