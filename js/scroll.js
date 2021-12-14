@@ -5,8 +5,6 @@ document.addEventListener('scroll', () => {
 
     if (document.documentElement.offsetWidth > 930) {
         if (window.pageYOffset >= 100) {
-
-            console.log(document.documentElement.offsetWidth,);
             header.classList.add('header-shadow');
             header.style.display = "none";
             headerSticky.style.display = "block";
